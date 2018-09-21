@@ -25,7 +25,8 @@ const sendMessage = (text, memberGroup, info) => {
   web.chat.postMessage({
     channel: conversationId,
     parse: 'full',
-    text: '@' + memberGroup + ':takakuda: New Pull Request By: ' + name + "\n" +
+    text: '@' + memberGroup + "\n" +
+      ':cat_typing: Pull Request From: ' + constants.SLACKNAME + "\n" +
       info + "\n",
     attachments: [
       {
@@ -41,7 +42,7 @@ const sendMessage = (text, memberGroup, info) => {
             "title": url,
           }
         ],
-        "footer": 'slackNode - Dusty',
+        "footer": 'slackNode v1.0',
       }
     ]
   })
