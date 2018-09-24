@@ -4,7 +4,7 @@ const { WebClient } = require('@slack/client');
 var minimist = require('minimist');
 var colors = require('colors')
 const readline = require('readline');
-const constants = require('./auth');
+const constants = require('./auth');  // REQUIRES LOCAL AUTH.js file
 let args = minimist(process.argv.slice(2), {
   string: 'g', // --group
   string: 'b', // --branch name
