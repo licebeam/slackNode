@@ -1,17 +1,11 @@
 #!/usr/bin/env node
 
 const { WebClient } = require('@slack/client');
-var minimist = require('minimist');
 var colors = require('colors')
 const readline = require('readline');
-const constants = require('./auth');  // REQUIRES LOCAL AUTH.js file
-let args = minimist(process.argv.slice(2), {
-  string: 'g', // --group
-  string: 'b', // --branch name
-  string: 'm', // --message or note to send
-})
-// console.log(args)
-var github = require('octonode');
+const constants = require('./auth');
+var github = require('octonode'); // REQUIRES LOCAL AUTH.js file
+
 //get slack access token
 const SLACK_TOKEN = constants.SLACK_TOKEN;
 const token = SLACK_TOKEN;
