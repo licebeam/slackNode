@@ -5,8 +5,6 @@ run npm install after cloning this repo.
 
 This repo requires that you add a file named auth.js to function properly.
 
-
-
 channel id's needed below can be found as the firt parameter in your slack url after slack.com/messages/XXXXX/ etc.
 auth.js should include ONLY the following code which you will need to fill out accordingly.
 
