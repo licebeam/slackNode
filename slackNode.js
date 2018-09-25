@@ -102,7 +102,7 @@ listTwo = (pull) => {
   list.on('select', function (options) {
     console.log(colors.red(''));
     console.log(colors.red('-----------------'));
-    console.log(colors.green('Attach Group:'));
+    console.log(colors.green('Choose Message Type:'));
       listThree(pull, options[0].value);
   });
   list.on('cancel', function (options) {
