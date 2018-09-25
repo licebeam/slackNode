@@ -100,10 +100,6 @@ listTwo = (pull) => {
     .list();
 
   list.on('select', function (options) {
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
     console.log(colors.red(''));
     console.log(colors.red('-----------------'));
     console.log(colors.green('Attach Group:'));
@@ -128,7 +124,7 @@ listThree = (pull, op2) => {
       msgCancelColor: 'red',
       multiSelect: false,
       inverse: false,
-      prepend: true,
+      prepend: false,
       disableInput: true
     }
   );
@@ -176,7 +172,7 @@ const sendMessage = (text, memberGroup, messageType,  info) => {
     channel: channel,
     parse: 'full',
     text: '@' + memberGroup + "\n" +
-      ':cat_typing: NEW :sparkles: '+ messageType +' By: ' + constants.SLACKNAME + "\n" +
+      ':sparkles: :sparkles: '+ messageType +' By: ' + constants.SLACKNAME + "\n" +
       info + "\n",
     attachments: [
       {

@@ -23,3 +23,5 @@ auth.js should include ONLY the following code which you will need to fill out a
 }
 `
 If you need help setting up please ask me.
+
+When you are prompted for a note or user tag, the name must be 100% accurate. You can also add emoji's using the commands like so :sparkles: -- all text is parsed accordingly. 
